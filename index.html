@@ -15,17 +15,17 @@
     </div>
     <div id="mySidebar" class="sidebar">
         <img src="ALPsLOGO.png">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav();closeDropdown()">&times;</a>
+        <a class="closebtn" onclick="closeNav()">&times;</a>
         <a href="AlpsOnline.html">Home</a>
 
         <div class="dropdown">
             <button id="isClosed" class="dropbtn" onclick="openDropdown()">Manual</button>
             <button id="isOpen" class="dropbtn" onclick="closeDropdown()" style="display:none">Manual
             </button>
-             <div id="dropdownItems" class="dropdown-content">
-                <a href="#">Icebreakers</a>
-                <a href="#">Initiatives</a>
-                <a href="#">Debriefing</a>
+             <div class="dropdown-content">
+                <a class="dropdown-item" href="#">Icebreakers</a>
+                <a class="dropdown-item" href="#">Initiatives</a>
+                <a class="dropdown-item" href="#">Debriefing</a>
             </div>
         </div>
         <a href="Meetings.html">Meetings</a>
@@ -70,27 +70,51 @@
     /* Set the width of the sidebar to 300px and the left margin of the page content to 300px */
     function openNav() {
       document.getElementById("mySidebar").style.width = "300px";
-      document.getElementById("email").style.marginLeft = "0px";
+      document.getElementById("isClosed").style.width = "300px";
+      document.getElementById("isOpen").style.width = "300px";
+      document.getElementById("email").style.marginLeft = "0";
   }
 
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
   function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("isClosed").style.width = "0";
+      document.getElementById("isOpen").style.width = "0";
       document.getElementById("email").style.marginLeft = "0";
   }
 
   function openDropdown() {
-      document.getElementById("dropdownItems").style.display = "block";
+      var x = document.getElementsByClassName("dropdown-item");
+      for(i = 0; i < x.length; i++){
+        x[i].style.height = "41px";
+        x[i].style.margin = ".25em";
+        x[i].style.padding = "inherit";
+      }
+      document.getElementsByClassName("dropdown-content")[0].style.height = "auto";
+
       document.getElementById("isOpen").style.display = "block";
-      document.getElementById("isOpen").style.marginBottom = "0em";
+      document.getElementById("isOpen").style.width = "300px";
+      document.getElementById("isOpen").style.marginBottom = "0";
       document.getElementById("isClosed").style.display = "none";
+
   }
 
   function closeDropdown() {
-      document.getElementById("dropdownItems").style.display = "none";
+      var x = document.getElementsByClassName("dropdown-item");
+      for(i = 0; i < x.length; i++){
+        x[i].style.height = "0";
+        x[i].style.margin = "0";
+        x[i].style.padding = "0";
+      }
+      document.getElementsByClassName("dropdown-content")[0].style.height = "0";
+
       document.getElementById("isOpen").style.display = "none";
-      document.getElementById("isClosed").style.display = "block";  
-  }
+      document.getElementById("isOpen").style.width = "0px";
+      document.getElementById("isClosed").style.display = "block"; 
+      document.getElementById("isClosed").style.width = "300px";
+      document.getElementById("isClosed").style.marginBottom = "24px"; 
+
+   }
 </script>
 </body>
 </html>
