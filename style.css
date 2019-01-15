@@ -2,6 +2,12 @@ body{
 	background-color: #252827;
 	margin: 0;
 }
+h6{
+	color: white;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
 
 /* ************************************************************************************** */
 
@@ -74,6 +80,10 @@ body{
 	margin-bottom: .5em;
 }
 
+.sidebar .dropbtn:hover{
+	color: #f1f1f1;
+}
+
 .dropdown-content {
 	text-decoration: none;
 	text-align: center;
@@ -106,19 +116,40 @@ body{
 .openbtn:hover {
 	background-color: #444;
 }
-
 /* ************************************************************************************** */
-#email {
+.main {
 	padding: 3em;
 }
 
-#email .newAssn {
-	color: red;
+/* ************************************************************************************** */
+#email {
+	margin-bottom: 3em;
 }
 
-#email h6{
-	color: white;
-	font-size: 2em;
-	margin: 0;
-	padding: 0;
+#email .new {
+	color: #FC0D1B;
 }
+
+#email .needLead {
+	color: #1072BD;
+}
+
+#email .cancel {
+	color: #6F359E;
+}
+
+#email .old{
+	color: lightgrey;
+}
+/* ************************************************************************************** */
+#links {
+	float: right;
+	font-size: 1em;
+	text-decoration: underline;
+	color: #1959C9;
+	text-align: right;
+	padding-top: 3em;
+}
+
+/* ************************************************************************************** */
+#dates 
