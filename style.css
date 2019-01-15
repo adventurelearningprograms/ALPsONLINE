@@ -76,7 +76,7 @@ h6{
 	text-decoration: none;
 	font-size: 3em;
 	color: #818181;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -95,10 +95,10 @@ h6{
 
 /* Dropdown button in sidebar*/
 .sidebar .dropbtn {
-	display: inline-block;
+	display: block;
 	margin: inherit;
 	margin-bottom: .5em;
-	width: 300px;
+	width: 0px;
 	height: 70px;
 	object-position: center;
 	background-color: inherit;
@@ -109,7 +109,7 @@ h6{
 	text-align: center;
 	font-size: 3em;
 	color: #818181;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -119,12 +119,21 @@ h6{
 
 /* Links within dropdown */
 .dropdown-content {
-	display: none;
+	display: block;
 	text-decoration: none;
 	text-align: center;
 	font-size: .75em;
 	color: #818181;
-	transition: 0.3s;
+	overflow-x: hidden; 
+	height: 0;
+	transition: .5s;
+}
+
+.dropdown-content .dropdown-item {
+	margin: 0;
+	padding: 0;
+	height: 0;
+	transition: .5s;
 }
 
 /* The button used to open the sidebar */
