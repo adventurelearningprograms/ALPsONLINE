@@ -1,81 +1,130 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ALPs Online</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+:root {
+	--w: screen.width;
+}
 
-<body>
-    <div id="mySidebar" class="sidebar">
-        <img class="cover-photo" src="ALPsLOGO.png">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav();closeDropdown()">&times;</a>
-        <a href="#">Home</a>
+body{
+	background-color: #252827;
+	margin: 0;
+}
 
-        <div class="dropdown">
-            <button id="isClosed" class="dropbtn" onclick="openDropdown()">Manual</button>
-            <button id="isOpen" class="dropbtn" onclick="closeDropdown()" style="display:none">Manual
-            </button>
-             <div id="dropdownItems" class="dropdown-content">
-                <a href="#">Icebreakers</a>
-                <a href="#">Initiatives</a>
-                <a href="#">Debriefing</a>
-            </div>
-        </div>
-        <a href="Meetings.html">Meetings</a>
-        <a href="#">Forms</a>
-        <a href="#">Contact</a> 
-    </div>
-    <div id="cover">
-        <button class="openbtn" onclick="openNav()">&#9776;</button> 
-    </div>
 
-<div id="email">
-  <h6>Assignments</h6>
-  <p id="newAssn">
-    Friday, January 18th, 2019
-    Ground, 1pm-4:30pm
-    Bio 151/153 TA’s
-    Nina (Lead), Mo (Observers taken off and date change)
-  </p>
-  <p id="newAssn">
-    Sunday, February 3rd, 2019
-    Ground, 9am-12pm
-    Pre-Veterinary Association
-    Brad (Lead), Bre, Echo (Observe), Misa (Observe)
-  </p>
-  <p id="newAssn">
-    Monday, February 4th, 2019
-    Ground, 7-7:45pm
-    Badger Operations Association
-    Leah (Lead), Anthony H., Eramis, Anthony K. (Observe), Naomi (Observe)
-  </p>
-</div>
 
-<script>
-    /* Set the width of the sidebar to 300px and the left margin of the page content to 300px */
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "300px";
-      document.getElementById("email").style.marginLeft = "0px";
-  }
+/* ************************************************************************************** */
 
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("email").style.marginLeft = "0";
-  }
+/* The sidebar menu */
+.sidebar {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
 
-  function openDropdown() {
-      document.getElementById("dropdownItems").style.display = "block";
-      document.getElementById("isOpen").style.display = "block";
-      document.getElementById("isOpen").style.marginBottom = "0em";
-      document.getElementById("isClosed").style.display = "none";
-  }
+/* The sidebar logo */
+.sidebar img{
+	display: block;
+	position: center;
+	filter: invert(100%);
+	height: 13em;
+	width: 70%;
+	margin-right: 17%;
+	margin-left: 15%;
+	margin-bottom: 2em;
+}
 
-  function closeDropdown() {
-      document.getElementById("dropdownItems").style.display = "none";
-      document.getElementById("isOpen").style.display = "none";
-      document.getElementById("isClosed").style.display = "block";  
-  }
-</script>
-</body>
-</html>
+/* The sidebar links */
+.sidebar a {
+	text-decoration: none;
+	text-align: center;
+	font-size: 3em;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	margin-bottom: .5em;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	font-size: 4em;
+}
+
+.sidebar .dropbtn {
+	object-position: center;
+	font-family: inherit;
+	text-decoration: none;
+	text-align: center;
+	font-size: 3em;
+	color: #818181;
+	display: inline-block;
+	transition: 0.3s;
+	background-color: inherit;
+	border: none;
+	margin: inherit;
+	width: 300px;
+	height: 70px;
+	margin-bottom: .5em;
+}
+
+.dropdown-content {
+	text-decoration: none;
+	text-align: center;
+	font-size: .75em;
+	color: #818181;
+	display: none;
+	transition: 0.3s;
+}
+
+#cover {
+	background-image: url("Retreat.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: center;
+	height: 300px;	
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('Retreat.png');
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+	font-size: 3em;
+	cursor: pointer;
+	background-color: #252827;
+	color: white;
+	padding: 0px 10px;
+	border: none;
+	position: fixed;
+}
+
+.openbtn:hover {
+	background-color: #444;
+}
+
+/* ************************************************************************************** */
+#email {
+	padding: 3em;
+}
+
+#email .newAssn {
+	color: red;
+}
+
+#email h6{
+	color: white;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
