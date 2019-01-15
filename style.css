@@ -1,17 +1,6 @@
-:root {
-	--w: screen.width;
-}
-
 body{
 	background-color: #252827;
 	margin: 0;
-}
-
-p {
-	font-size: 3vw;
-	color: #818181;
-	text-indent: 2.5em;
-	padding: 1em 2em;
 }
 
 /* ************************************************************************************** */
@@ -65,6 +54,7 @@ p {
 	right: 25px;
 	font-size: 36px;
 	margin-left: 50px;
+	font-size: 4em;
 }
 
 .sidebar .dropbtn {
@@ -118,3 +108,17 @@ p {
 }
 
 /* ************************************************************************************** */
+#email {
+	padding: 3em;
+}
+
+#email .newAssn {
+	color: red;
+}
+
+#email h6{
+	color: white;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
