@@ -11,6 +11,12 @@ h6{
 	font-size: 2em;
 	color: white;
 }
+
+a { text-decoration: underline; color: #1959C9; }
+a:visited { text-decoration: underline; }
+a:hover { text-decoration: underline; }
+a:focus { text-decoration: underline; }
+a:hover, a:active { text-decoration: underline; }
 /* ************************************************************************************** */
 #cover {
 	height: 300px;
@@ -180,11 +186,31 @@ h6{
 	margin: 0;
 	padding: 0;
 	float: right;
-	text-decoration: underline;
+	text-decoration: none; 
 	color: #1959C9;
 	text-align: right;
 	font-size: 2em;
 }
 
+#links:visited {
+	text-decoration: none;
+	color: #1959C9;
+}
+
 /* ************************************************************************************** */
-#dates 
+#dates {
+
+}
+
+/* ************************************************************************************** */
+#footer {
+	margin: 10% auto 0 auto;
+	width: 100%;
+	text-align: center;
+	color: darkgray;
+}
+
+#footer a{
+	text-decoration: underline;
+	color: #1959C9;
+}
