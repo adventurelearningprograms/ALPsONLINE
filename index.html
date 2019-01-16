@@ -20,8 +20,7 @@
         <!-- Activities -->
         <div class="dropdown">
             <button id="isClosedActivities" class="dropbtn" onclick="openActivities()">Activities <span>&#9652</span></button>
-            <button id="isOpenActivities" class="dropbtn" onclick="closeActivities()" style="display:none">Activities &#9652
-            </button>
+            <button id="isOpenActivities" class="dropbtn" onclick="closeActivities()" style="display:none">Activities &#9652</button>
             <div class="dropdown-activities">
                 <a class="dropdown-activity" href="FVC.html">Full Value Contracts</a>
                 <a class="dropdown-activity" href="CYC.html">Choose your Challenge</a>
@@ -55,6 +54,7 @@
             <a href="https://docs.google.com/spreadsheets/d/1gPYxi6vbGu68WyEkvOOrtmU-cbDMwF6hLbXp-KobaeE/edit#gid=1540213585">Results</a><br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3Vc0vXpQXteSyST9BumsCkEAkFvnDujYHePq027Mptx0bCA/viewform">Feedback/Questions</a><br>
         </div>
+        <h1>Home</h1>
         <div id="email">
           <h6>Assignments (12/18)</h6>
           <p class="new">
@@ -112,7 +112,7 @@
   function openActivities() {
       var x = document.getElementsByClassName("dropdown-activity");
       for(i = 0; i < x.length; i++){
-        x[i].style.height = "28px";
+        x[i].style.height = "auto";
         x[i].style.margin = ".5em";
         x[i].style.padding = "inherit";
     }
@@ -143,7 +143,7 @@ document.getElementById("isClosedActivities").style.marginBottom = "24px";
 function openFlow() {
    var x = document.getElementsByClassName("dropdown-flow");
    for(i = 0; i < x.length; i++){
-     x[i].style.height = "auto";
+     x[i].style.height = "28px";
      x[i].style.margin = ".75em";
      x[i].style.padding = "inherit";
  }
