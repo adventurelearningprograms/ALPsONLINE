@@ -20,7 +20,7 @@ a:hover, a:active { text-decoration: underline; }
 /* ************************************************************************************** */
 #cover {
 	height: 300px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('Retreat.png');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/Retreat.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: center;
@@ -104,8 +104,9 @@ a:hover, a:active { text-decoration: underline; }
 	display: block;
 	margin: inherit;
 	margin-bottom: .5em;
+	padding: 0;
 	width: 0px;
-	height: 70px;
+	height: auto;
 	object-position: center;
 	background-color: inherit;
 	border: none;
@@ -123,23 +124,49 @@ a:hover, a:active { text-decoration: underline; }
 	color: #f1f1f1;
 }
 
-/* Links within dropdown */
-.dropdown-content {
+.sidebar span{
+	display: inline-block;
+	color: #818181;
+	transition: 0.5s;
+	transform: scale(1,-1) translateY(-.18em);
+}
+
+/* Activity Links within dropdown */
+.dropdown-activities {
 	display: block;
 	text-decoration: none;
 	text-align: center;
-	font-size: .75em;
+	font-size: .6em;
 	color: #818181;
 	overflow-x: hidden; 
 	height: 0;
 	transition: .5s;
 }
 
-.dropdown-content .dropdown-item {
+.dropdown-activities .dropdown-activity {
 	margin: 0;
 	padding: 0;
 	height: 0;
 	transition: .5s;
+}
+
+/* Workshop Flow links within dropdown */
+.dropdown-flows {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: .6em;
+	color: #818181;
+	overflow-x: hidden; 
+	height: 0;
+	transition: .5s;
+}
+
+.dropdown-flows .dropdown-flow {
+	margin: 0;
+	padding: 0;
+	height: 0;
+	transition: .75s;
 }
 
 /* The button used to open the sidebar */
@@ -204,6 +231,7 @@ a:hover, a:active { text-decoration: underline; }
 
 /* ************************************************************************************** */
 #footer {
+	bottom: 0;
 	margin: 10% auto 0 auto;
 	width: 100%;
 	text-align: center;
