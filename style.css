@@ -258,7 +258,27 @@ a:hover, a:active { text-decoration: underline; }
 .forms div {
 	line-height: 3em;
 }
+/* ************************************************************************************** */
+.activities h6{
+	margin: 0;
+	margin-bottom: .5em;
+	padding: 0;
+	font-size: 2em;
+	color: white;
+}
 
+.activities li{
+	margin-bottom: 1em;
+}
+
+.activities p{
+	line-height: 1.5em;
+}
+
+hr{
+	margin-bottom: 1em;
+}
+/* ************************************************************************************** */
 #footer {
 	bottom: 0;
 	margin: 10% auto 0 auto;
