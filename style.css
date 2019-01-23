@@ -246,8 +246,22 @@ a:hover, a:active { text-decoration: underline; }
 }
 
 /* ************************************************************************************** */
-#dates {
+#dates{
+	line-height: 1.5em;
+}
 
+#dates .month{
+	text-decoration: underline;
+	font-size: 1.5em;
+	margin-top: .25em;
+}
+
+#dates .staffMeeting{
+	color: lightblue;
+}
+
+#dates .training{
+	color: darkorange;
 }
 
 /* ************************************************************************************** */
