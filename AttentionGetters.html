@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ALPs Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="cover">
+    <button class="openbtn" onclick="openNav()" style="text-align: left">&#9776;</button> 
+    <div id="cover-text">
+      Adventure Learning Programs
+      <div id="cover-subtext">Online Resources</div>
+    </div>
+  </div>
+  <div id="mySidebar" class="sidebar">
+    <img src="images/ALPsLOGO.png">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/alpsOnline/">Home</a>
+    <!-- Activities -->
+    <div class="dropdown">
+      <button id="isClosedActivities" class="dropbtn" onclick="openActivities()">Activities <span>&#9652</span></button>
+      <button id="isOpenActivities" class="dropbtn" onclick="closeActivities()" style="display:none">Activities &#9652
+      </button>
+      <div class="dropdown-activities">
+        <a class="dropdown-activity" href="FVC.html">Full Value Contracts</a>
+        <a class="dropdown-activity" href="CYC.html">Choose your Challenge</a>
+        <a class="dropdown-activity" href="NameGames.html">Name Games</a>
+        <a class="dropdown-activity" href="IceBreakers.html">Icebreakers & GTKYs</a>
+        <a class="dropdown-activity" href="Initiatives.html">Initiatives</a>
+        <a class="dropdown-activity" href="Debriefing.html">Debriefing</a>
+      </div>
+      <!--Workshop Flow -->
+      <div class="dropdown" style="height: auto">
+        <button id="isClosedFlow" class="dropbtn" onclick="openFlow()">Workshop Flow <span>&#9652</span></button>
+        <button id="isOpenFlow" class="dropbtn" onclick="closeFlow()" style="display:none">Workshop Flow &#9652
+        </button>
+        <div class="dropdown-flows">
+          <a class="dropdown-flow" href="AttentionGetters.html">Attention Getters</a>
+          <a class="dropdown-flow" href="Splitting.html">Group Splitting</a>
+          <a class="dropdown-flow" href="GTKYQuestions.html">GTKY Questions</a>
+          <a class="dropdown-flow" href="Propless.html">Propless Activities</a>
+          <a class="dropdown-flow" href="Closers.html">Closers</a>
+          
+        </div>
+      </div>
+      <a href="Minutes.html">Minutes</a>
+      <a href="Forms.html">Forms</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="main">
+    <!--CONTENT STARTS-->
+    <h1>Attention Getters</h1>
+    <div class="activity-links">
+      <a href="#Call and Response">Call and Response</a><br>
+      <a href="#Countdown">Countdown</a><br>
+      <a href="#Everybody Clap Your Hands!">Everybody Clap Your Hands!</a><br>
+      <a href="#Making a Beat">Making a Beat</a><br>
+      <a href="#Hand Raise">Hand Raise</a><br>
+
+
+    </div>
+    <div class="activities">
+      <hr>
+      
+      <h6 id="Call and Response">Call and Response</h6>
+      <div>
+        Think of a phrase that can be broken down into a call and response, for example: On, Wisconsin! You would say, “When I say On! You say Wisconsin!” Then as the facilitator, start the call and response with your part, “On!” the group will then respond with “Wisconsin!” Repeat until you have their attention. <br>
+        Other call and responses:
+      <ul>
+        <li>I say waterfall, you say shhhh</li>
+        <li>And a HUSH fell over the crowd</li>
+      </ul>
+      <hr>
+      <h6 id="Countdown">Countdown</h6>
+      <div>
+        This attention getter simulates the last 5 seconds of the BIG GAME! You start the countdown slowly from -5, with a crisp, clear voice -4, and as you are heard by the players around you - 3, they join in on the counting -2, as all the players join in it builds louder and louder -1 and concludes with a long BUZZZZZZZZZZ. After the buzzer sound the group knows to give you their attention.
+      </div>
+      <hr>
+      <h6 id="Everybody Clap Your Hands!">Everybody Clap Your Hands!</h6>
+      <div>
+        Yell out “EVERYBODY CLAP YOUR HANDS!” and start clapping your hands in rapid succession until it naturally seems you should end. Repeat if you don’t have everyone’s attention. The rhythm/idea comes from a song called the Cha Cha Slide.
+      </div>
+      <hr>
+      <h6 id="Making a Beat">Making a Beat</h6>
+      <div>
+        Think of a beat and start doing it and walking around the room. As people hear you doing it, others will join in until everyone is doing it. Now, you have their attention. Note: the beat for We Will Rock You by Queen is great because people then start singing the song.
+      </div>
+      <hr>
+      <h6 id="Hand Raise">Hand Raise</h6>
+      <div>
+        Let everyone know that when you hold up your hand, then they should raise their hand as well. When they raise up their hands, they should also stop talking. Tell them that if they see a facilitator or anyone else holding up their hand because a facilitator is doing so, that should also initiate a hand raise as well. This should cascade over the entire group until everyone's hand is raised.<br>
+        Other forms of the Hand Raise:
+        <ul>
+          <li>Bucky's in the House: Instead of raising one hand, raise both hands in a W</li>
+          <li>The Michael: Wave instead of raising a hand. Occasionally point and acknowledge people in the crowd as they begin to notice you</li>
+      </div>
+      <hr>
+  
+    <!--CONTENT ENDS-->
+  </div>
+  <div id="footer">
+    Email: <a href="mailto:alps@studentlife.wisc.edu">alps@studentlife.wisc.edu</a><br>
+    Website: <a href="https://alps.cfli.wisc.edu/">alps.cfli.wisc.edu</a> Phone: <a href="tel:1-608-263-4663">(608) 263-4663</a><br>
+    716 Langdon St., 309 Red Gym<br>
+    Madison, WI 53706
+  </div>
+</div>
+
+<script>
+  /* Set the width of the sidebar to 300px and the left margin of the page content to 300px */
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "300px";
+    document.getElementById("isClosedActivities").style.width = "300px";
+    document.getElementById("isOpenActivities").style.width = "300px";
+    document.getElementById("isClosedFlow").style.width = "300px";
+    document.getElementById("isOpenFlow").style.width = "300px";
+    document.getElementById("email").style.marginLeft = "0";
+  }
+
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("isClosedActivities").style.width = "0";
+    document.getElementById("isOpenActivities").style.width = "0";
+    document.getElementById("isClosedFlow").style.width = "0";
+    document.getElementById("isOpenFlow").style.width = "0";
+    document.getElementById("email").style.marginLeft = "0";
+  }
+
+  function openActivities() {
+    var x = document.getElementsByClassName("dropdown-activity");
+    for(i = 0; i < x.length; i++){
+      x[i].style.height = "auto";
+      x[i].style.margin = ".5em";
+      x[i].style.padding = "inherit";
+    }
+    document.getElementsByClassName("dropdown-activities")[0].style.height = "auto";
+
+    document.getElementById("isOpenActivities").style.display = "block";
+    document.getElementById("isOpenActivities").style.width = "300px";
+    document.getElementById("isOpenActivities").style.marginBottom = "0";
+    document.getElementById("isClosedActivities").style.display = "none";
+  }
+
+  function closeActivities() {
+    var x = document.getElementsByClassName("dropdown-activity");
+    for(i = 0; i < x.length; i++){
+      x[i].style.height = "0";
+      x[i].style.margin = "0";
+      x[i].style.padding = "0";
+    }
+    document.getElementsByClassName("dropdown-activities")[0].style.height = "0";
+
+    document.getElementById("isOpenActivities").style.display = "none";
+    document.getElementById("isOpenActivities").style.width = "0px";
+    document.getElementById("isClosedActivities").style.display = "block"; 
+    document.getElementById("isClosedActivities").style.width = "300px";
+    document.getElementById("isClosedActivities").style.marginBottom = "24px"; 
+  }
+
+  function openFlow() {
+   var x = document.getElementsByClassName("dropdown-flow");
+   for(i = 0; i < x.length; i++){
+     x[i].style.height = "28px";
+     x[i].style.margin = ".75em";
+     x[i].style.padding = "inherit";
+   }
+   document.getElementsByClassName("dropdown-flows")[0].style.height = "auto";
+
+   document.getElementById("isOpenFlow").style.display = "block";
+   document.getElementById("isOpenFlow").style.width = "300px";
+   document.getElementById("isOpenFlow").style.marginBottom = "0";
+   document.getElementById("isClosedFlow").style.display = "none";
+ }
+
+ function closeFlow() {
+   var x = document.getElementsByClassName("dropdown-flow");
+   for(i = 0; i < x.length; i++){
+     x[i].style.height = "0";
+     x[i].style.margin = "0";
+     x[i].style.padding = "0";
+   }
+   document.getElementsByClassName("dropdown-flows")[0].style.height = "0";
+
+   document.getElementById("isOpenFlow").style.display = "none";
+   document.getElementById("isOpenFlow").style.width = "0px";
+   document.getElementById("isClosedFlow").style.display = "block"; 
+   document.getElementById("isClosedFlow").style.width = "300px";
+   document.getElementById("isClosedFlow").style.marginBottom = "24px"; 
+ }
+</script>
+</body>
+</html>
